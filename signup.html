@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GoBusNow - Sign up</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <!-- Header with Logo and Navigation -->
+  <header>
+    <div class="container header-content">
+      <div class="branding">
+        <h1><a href="index.html">GoBusNow</a></h1>
+        <p class="tagline">Book your bus tickets effortlessly</p>
+      </div>
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="search-results.html" aria-current="page">Search Buses</a></li>
+          <li><a href="my-bookings.html">My Bookings</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="music.html">Music</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section with Search Form -->
+  <section class="hero">
+    <div class="container">
+        <h2>Create an Account</h2>
+      <p>Sign up to start booking your bus tickets with GoBusNow!</p>
+      
+      <form action="signup-success.html" method="POST">
+        <!-- Full Name -->
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <!-- Phone Number -->
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" required>
+
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Create a password" minlength="8" required>
+
+        <!-- Confirm Password -->
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter your password" required>
+
+        <!-- Address -->
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="2" placeholder="Enter your address" required></textarea>
+
+        <!-- Date of Birth -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <!-- Signup Button -->
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+      </form>
+    </div>
+  </section>
+
+
+  <!-- Footer with Social Links and Contact -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-section">
+        <h4>About GoBusNow</h4>
+        <p>GoBusNow is your go-to platform for convenient, fast, and secure online bus ticket booking.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <ul class="social-links">
+          <li><a href="#" aria-label="Follow us on Facebook">Facebook</a></li>
+          <li><a href="#" aria-label="Follow us on Twitter">Twitter</a></li>
+          <li><a href="#" aria-label="Follow us on Instagram">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact Us</h4>
+        <address>
+          <p>Email: <a href="mailto:support@gobusnow.com">support@gobusnow.com</a></p>
+          <p>Phone: <a href="tel:+15551234567">+1 (555) 123-4567</a></p>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 GoBusNow. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
